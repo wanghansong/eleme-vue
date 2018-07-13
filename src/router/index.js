@@ -38,7 +38,7 @@ const router = new Router({
         {
             path: '*',
             name: '404',
-            redirect: '/'
+            redirect: '/goods'
         }
     ]
 });

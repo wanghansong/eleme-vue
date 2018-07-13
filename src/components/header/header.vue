@@ -1,21 +1,17 @@
-<!-- goods商品页面 -->
+<!-- header -->
 <template>
-    <div>goods</div>
-
+    <div>header</div>
 </template>
 
 <script>
-
 export default {
     data() {
         return {
-            test: 'hello world,this is goods page!'
+            test: 'sdfa'
         };
     }
-
 };
 
 </script>
 <style lang='less' scoped>
-
 </style>
