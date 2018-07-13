@@ -11,7 +11,7 @@ export default new Router({
             path: '/',
             alias: '/goods',
             name: 'Goods',
-            meta: '商品'
+            meta: '商品',
             component: () =>
               import ( /* webpackChunkName:"goods/index" */ '@/pages/goods/index')
         },
