@@ -3,7 +3,7 @@
 
 UI设计稿在resource目录下
 
-项目采用vue+element UI
+项目采用vue+vue-router+vuex+element UI
 
 ## Build Setup
 
