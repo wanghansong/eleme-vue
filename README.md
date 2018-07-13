@@ -1,7 +1,8 @@
 # eleme-vue
+## 项目描述：
 
-> A Vue.js project
 UI设计稿在resource目录下
+
 项目采用vue+element UI
 
 ## Build Setup
