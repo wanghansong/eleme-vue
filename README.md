@@ -5,6 +5,20 @@ UI设计稿在resource目录下
 
 项目采用vue+vue-router+vuex+element UI
 
+`/src/components/`目录下是存放一些公共组件，如：header、nav
+
+`/src/pages/`放各个页面，每个页面一个文件夹，每个文件夹下再建个components文件夹放组成该页面的组件
+
+整个项目包含三个路由：
+
+`/goods`商品页面
+
+`/ratings`评论页面
+
+`/seller`商家页面
+
+这三个页面有公共的header、nav
+
 ## Build Setup
 
 ``` bash
