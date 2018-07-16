@@ -1,0 +1,16 @@
+/* 移动端适配1px线 */
+.border-1px (@color: rgba(7, 17 , 27, 0.1)){
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        top: -50%;
+        bottom: -50%;
+        left: -50%;
+        right: -50%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        border-bottom: 1px solid @color;
+
+    }
+}

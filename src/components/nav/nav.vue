@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import '@/assets/less/base.less';
 export default {
     data() {
         return {
@@ -32,27 +33,38 @@ export default {
 
 </script>
 <style lang='less' scoped>
+@import '../../assets/less/base.less';
 
 .nav-wrap{
     display: flex;
+    // position: relative;
     width: 100%;
     height: 40px;
-
-    border-bottom: 1px rgba(7, 17 , 27, 0.1) solid;
-
+    line-height: 40px;
+    .border-1px();
+    // &:after{
+    //     display: block;
+    //     position: absolute;
+    //     width: 100%;
+    //     left: 0;
+    //     bottom: 0;
+    //     border-bottom: 1px rgba(7, 17 , 27, 0.1) solid;
+    //     content: ' ';
+    // }
 
     .nav-item{
         flex: 1;
         & > a{
+            display: block;
             text-decoration: none;
             font-size: 14px;
-            line-height: 14px;
             color: rgb(77, 85, 93);
             &.router-link-exact-active{
                 color: rgb(240, 20, 20);
             }
         }
     }
+
 }
 .router-link-exact-active{
     color: rgb(240, 20, 20);
