@@ -34,10 +34,9 @@ export default {
 </script>
 <style lang='less' scoped>
 @import '../../assets/less/base.less';
-
 .nav-wrap{
     display: flex;
-    // position: relative;
+    position: relative;
     width: 100%;
     height: 40px;
     line-height: 40px;
