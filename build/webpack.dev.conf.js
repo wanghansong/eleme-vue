@@ -13,6 +13,16 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+/* wang */
+var serverconf=require('./mock-conf.js')
+const express = require('express')
+const app = express()
+var apiRoutes = express.Router()
+app.use('/api', apiRoutes)
+var sellerData = require('../mock/seller/seller.js')
+var goodsData=require('../mock/goods/goods.js')
+var ratingsData=require('../mock/ratings/ratings.js')
+
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
@@ -22,6 +32,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // these devServer options should be customized in /config/index.js
   devServer: {
+    before: serverconf.before(app),
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
